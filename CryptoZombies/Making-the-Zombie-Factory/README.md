@@ -77,7 +77,7 @@ function fn2() private {}
 
 - Functions can also return a value.
 ```
-function _greetings(string greet){
+function _greetings(string greet) returns (string){
  return greet;
 }
 ```
