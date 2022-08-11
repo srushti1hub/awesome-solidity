@@ -10,3 +10,32 @@ mapping (address => uint) public accountBalance;
 
 ## Msg.sender
 - It's global variable that contains address of the person who called current function.
+
+## Require
+- Require ensures that the function will throw an error, if certain condition is not true. Just like throw and catch in JavaScipt.
+```
+function check(string _name) public returns (string){
+  require(_name == "Srushti");
+  return ("Hello, "+_name);
+}
+```
+
+## Inheritance
+- Just like classes can be inherited in C++ and Java. Contracts can also be inherited.
+```
+contract super_contract {
+  //empty contract
+}
+contract child_contract is super_contract{
+  //empty contract
+}
+```
+
+## Storage Vs Memory
+- Storage refers to variables stored permanently on the blockchain. 
+- Memory variables are temporary, and are erased between external function calls to your contract.
+
+## Internal Vs External
+- Internal is the same as private, except that it's also accessible to contracts that inherit from this contract.
+- External is similar to public, except that these functions can only be called outside the contract.
+
