@@ -42,5 +42,15 @@ contract child_contract is super_contract{
 ## Handling Function returning multiple values
 - The functions in solidity can return multiple values. To fetch the specific value out of all returning values a specific syntax is used.
 ```
-function myExample(uint id) public returns 
+function myExample(uint _id) public returns (
+    bool check1,
+    bool check2,
+    uint256 A,
+    uint256 b,
+    uint256 c,
+    uint256 d
+    );
+    // To get varible A from given function
+    uint k;
+    (,,k) = myExample(1234567890); 
 ```
