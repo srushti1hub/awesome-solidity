@@ -39,3 +39,8 @@ contract child_contract is super_contract{
 - Internal is the same as private, except that it's also accessible to contracts that inherit from this contract.
 - External is similar to public, except that these functions can only be called outside the contract.
 
+## Handling Function returning multiple values
+- The functions in solidity can return multiple values. To fetch the specific value out of all returning values a specific syntax is used.
+```
+function myExample(uint id) public returns 
+```
